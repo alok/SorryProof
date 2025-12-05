@@ -25,10 +25,10 @@ rev = "main"
 import SorryProof
 
 -- sorry_proof only fills Prop holes - code still compiles!
-def factorial (n : Nat) : { m : Nat // m > 0 } :=
-  ⟨if n = 0 then 1 else n * (factorial (n-1)).val, sorry_proof⟩
+def increment (n : Nat) : { m : Nat // m > n } :=
+  ⟨n + 1, sorry_proof⟩
 
-#eval factorial 5  -- Works! Outputs ⟨120, _⟩
+#eval! increment 5  -- Works! Outputs 6
 
 -- sorry_data stubs out types during development
 structure AppConfig where
