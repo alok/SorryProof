@@ -10,6 +10,15 @@ Add to your `lakefile.lean`:
 require sorryproof from git "https://github.com/alok/SorryProof.git" @ "main"
 ```
 
+Or if using `lakefile.toml`:
+
+```toml
+[[require]]
+name = "sorryproof"
+git = "https://github.com/alok/SorryProof.git"
+rev = "main"
+```
+
 ## Usage
 
 ```lean
