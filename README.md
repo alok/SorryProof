@@ -7,7 +7,7 @@ Type-safe placeholders for Lean 4 that don't block code generation.
 Add to your `lakefile.lean`:
 
 ```lean
-require sorryproof from git "https://github.com/alok/SorryProof" @ "main"
+require sorryproof from git "https://github.com/alok/SorryProof.git" @ "main"
 ```
 
 ## Usage
